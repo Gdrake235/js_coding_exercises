@@ -55,11 +55,20 @@ function reverseWord(word) {
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
+  var result = words
+  reverseWord(words)
+   /*  .split("")
+    .map((word) => word.split("").reverse().join("")); */
+  return result
+
+  /* return words.map((value) => value.split(" ").reverse().join(" ").trim()); */
+  
 }
 
 function countLinuxUsers(users) {
   if (users === undefined) throw new Error("users is required");
   // Add your code here!
+
 }
 
 function getMeanScore(scores) {
