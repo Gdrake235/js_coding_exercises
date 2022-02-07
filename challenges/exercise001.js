@@ -44,19 +44,17 @@ function getMiddleCharacter(str) {
 function reverseWord(word) {
   if (word === undefined) throw new Error("word is required");
   // Add your code here!
-  var anyWord = '';
-  for ( var i = word.length -1; i >= 0; i-- ) {
-    anyWord += word[i]
+  var anyWord = "";
+  for (var i = word.length - 1; i >= 0; i--) {
+    anyWord += word[i];
   }
 
-  return anyWord
-
+  return anyWord;
 }
 
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
-  
 }
 
 function countLinuxUsers(users) {
