@@ -82,8 +82,7 @@ function getMeanScore(scores) {
   var count = scores.length;
 
   var result = key / count;
-
-  return result.toFixed(2);
+  return parseInt(result.toFixed(2));
 }
 
 function simpleFizzBuzz(n) {
