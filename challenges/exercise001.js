@@ -33,7 +33,10 @@ function getMiddleCharacter(str) {
   if (str.length % 2 == 0) {
     key = str.length / 2 - 1;
     length = 2;
-  } 
+  } else {
+    key = (str.length - 1) / 2;
+    length = 1;
+  }
 
   return str.substring(key, key + length);
 }
@@ -41,11 +44,19 @@ function getMiddleCharacter(str) {
 function reverseWord(word) {
   if (word === undefined) throw new Error("word is required");
   // Add your code here!
+  var anyWord = '';
+  for ( var i = word.length -1; i >= 0; i-- ) {
+    anyWord += word[i]
+  }
+
+  return anyWord
+
 }
 
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
+  
 }
 
 function countLinuxUsers(users) {
