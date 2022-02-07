@@ -16,12 +16,14 @@ function addVAT(originalPrice, vatRate) {
   if (vatRate === undefined) throw new Error("vatRate is required");
   // Add your code here!
   return originalPrice * (1 + vatRate / 100);
+  /*   return total.slice(0, total.index(".") + vatRate + 1); */
 }
 
 function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
   // Add your code here!
+  return originalPrice * (1 - reduction / 100);
 }
 
 function getMiddleCharacter(str) {
