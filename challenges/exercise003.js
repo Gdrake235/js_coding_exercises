@@ -1,14 +1,19 @@
 function getSquares(nums) {
   if (nums === undefined) throw new Error("nums is required");
   // Your code here!
+  return nums.map(function (n) {
+    return n * n;
+  });
 }
 
 function camelCaseWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Your code here!
-    var result = words.toString().toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
-    return result
-    
+  var result = words
+    .toString()
+    .toLowerCase()
+    .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
+  return result;
 }
 
 function getTotalSubjects(people) {
@@ -33,5 +38,5 @@ module.exports = {
   camelCaseWords,
   getTotalSubjects,
   checkIngredients,
-  duplicateNumbers
+  duplicateNumbers,
 };
