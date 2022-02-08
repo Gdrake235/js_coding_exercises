@@ -58,6 +58,8 @@ console.log(arr);
 function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
   // Your code here!
+  console.log(person)
+  return person.address["M"]
 }
 
 module.exports = {
