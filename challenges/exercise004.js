@@ -1,6 +1,32 @@
 function findSmallNums(nums) {
   if (!nums) throw new Error("nums is required");
   // Your code here
+ /*  var min = nums[0]; */
+  
+  var min = nums[0];
+  nums.sort();
+/*   return nums.reverse(); */
+  for (var i = nums.length ; i >= 0; i--) {
+  /*   min += nums[i] */
+    min = nums[i]/* .reverse(); */
+    
+  }
+
+  return min
+
+   /*  var anyWord = '';
+  for ( var i = word.length -1; i >= 0; i-- ) {
+    anyWord += word[i]
+  }
+
+  return anyWord
+
+} */
+/* nums[0]; */
+/* return nums.reverse(); */
+ /*  nums.sort();
+  nums[0]
+  return nums.reverse(); */
 }
 
 function findNamesBeginningWith(names, char) {
