@@ -2,6 +2,11 @@ const findNextNumber = (nums, n) => {
   if (nums === undefined) throw new Error("nums is required");
   if (n === undefined) throw new Error("n is required");
   // Your code here!
+
+  for (var i = 0; i < n; i++) {
+    return nums.push(i);
+  }
+
 };
 
 const count1sand0s = str => {
