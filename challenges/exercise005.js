@@ -33,6 +33,16 @@ const findNeedle = (haystack, searchTerm) => {
   if (haystack === undefined) throw new Error("haystack is required");
   if (searchTerm === undefined) throw new Error("searchTerm is required");
   // Your code here!
+ 
+
+  // ⛔️ Uncaught TypeError: str.includes is not a function
+  /* const result = haystack.includes(searchTerm); 
+    return result
+  */
+
+  
+  const result = haystack.toString().includes(searchTerm);
+  return result; 
 };
 
 const getWordFrequencies = str => {
