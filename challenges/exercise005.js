@@ -42,6 +42,15 @@ const reverseNumber = (n) => {
 const sumArrays = arrs => {
   if (arrs === undefined) throw new Error("arrs is required");
   // Your code here!
+   var result = 0;
+   for (var n = 0; n < arrs.length; ++n) {
+     result += arrs[n];
+   }
+   return result;
+/*   var result = arrs.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  return result */
 };
 
 const arrShift = arr => {
@@ -65,7 +74,7 @@ const findNeedle = (haystack, searchTerm) => {
   return result; 
 };
 
-const getWordFrequencies = str => {
+const getWordFrequencies = (str) => {
   if (str === undefined) throw new Error("str is required");
   // Your code here!
 
@@ -75,17 +84,16 @@ const getWordFrequencies = str => {
     .toLowerCase()
     .match(/\w+(?:'\w+)*/g);
   var arr = {};
- /*  var result = word.toString().toLowerCase(); */
 
-for (var i = 0; i < word.length; i++) {
-  if (arr[word[i]]) {
-    arr[word[i]] += 1;
-  } else {
-    arr[word[i]] = 1;
+  for (var i = 0; i < word.length; i++) {
+    if (arr[word[i]]) {
+      arr[word[i]] += 1;
+    } else {
+      arr[word[i]] = 1;
+    }
   }
-}
-  
-  return arr
+
+  return arr;
 };
 
 module.exports = {
