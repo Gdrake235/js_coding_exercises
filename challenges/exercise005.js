@@ -69,9 +69,13 @@ const getWordFrequencies = str => {
   if (str === undefined) throw new Error("str is required");
   // Your code here!
 
-  var word = str.split(" ");
+  var word = str
+    .split(" ")
+    .toString()
+    .toLowerCase()
+    .match(/\w+(?:'\w+)*/g);
   var arr = {};
-  var result = word.toLowerCase()
+ /*  var result = word.toString().toLowerCase(); */
 
 for (var i = 0; i < word.length; i++) {
   if (arr[word[i]]) {
@@ -81,7 +85,7 @@ for (var i = 0; i < word.length; i++) {
   }
 }
   
-  return result
+  return arr
 };
 
 module.exports = {
