@@ -14,9 +14,19 @@ const count1sand0s = str => {
   // Your code here!
 };
 
-const reverseNumber = n => {
+const reverseNumber = (n) => {
   if (n === undefined) throw new Error("n is required");
   // Your code here!
+  var num,
+    result = 0;
+
+  while (n) {
+    num = n % 10;
+    result = result * 10 + num;
+    n = (n / 10) | 0;
+  }
+
+  return result;
 };
 
 const sumArrays = arrs => {
