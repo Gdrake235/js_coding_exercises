@@ -1,20 +1,20 @@
 function findSmallNums(nums) {
   if (!nums) throw new Error("nums is required");
   // Your code here
-  /*  var min = nums[0]; */
+  /*  let min = nums[0]; */
 
-  var min = nums[0];
+  let min = nums[0];
   nums.sort();
   /*   return nums.reverse(); */
-  for (var i = nums.length; i >= 0; i--) {
+  for (let i = nums.length; i >= 0; i--) {
     /*   min += nums[i] */
     min = nums[i]; /* .reverse(); */
   }
 
   return min;
 
-  /*  var anyWord = '';
-  for ( var i = word.length -1; i >= 0; i-- ) {
+  /*  let anyWord = '';
+  for ( let i = word.length -1; i >= 0; i-- ) {
     anyWord += word[i]
   }
 
@@ -32,7 +32,7 @@ function findNamesBeginningWith(names, char) {
   if (!names) throw new Error("names is required");
   if (!char) throw new Error("char is required");
   // Your code here
-  var result = names
+  let result = names
     .charAt(0) /* .toUpperCase() + names.slice(1); */
     .find((el) => el.length < 13);
   return result;
@@ -51,7 +51,7 @@ function getIntegers(nums) {
 function getCities(users) {
   if (!users) throw new Error("users is required");
   // Your code here
-  var arr = users;
+  let arr = users;
   console.log(arr);
   const result = arr.map(([id, data, { city }]) => ({
     id,
