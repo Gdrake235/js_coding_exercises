@@ -30,7 +30,7 @@ function getSalePrice(originalPrice, reduction) {
 function getMiddleCharacter(str) {
   if (str === undefined) throw new Error("str is required");
   // Add your code here!
-  var key, length;
+  let key, length;
   if (str.length % 2 == 0) {
     key = str.length / 2 - 1;
     length = 2;
@@ -45,8 +45,8 @@ function getMiddleCharacter(str) {
 function reverseWord(word) {
   if (word === undefined) throw new Error("word is required");
   // Add your code here!
-  var anyWord = "";
-  for (var i = word.length - 1; i >= 0; i--) {
+  let anyWord = "";
+  for (let i = word.length - 1; i >= 0; i--) {
     anyWord += word[i];
   }
 
@@ -56,9 +56,9 @@ function reverseWord(word) {
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
-  var result = words
+  let result = words
   reverseWord(words)
-   /*  .split("")
+  /*  .split("")
     .map((word) => word.split("").reverse().join("")); */
   return result
 
@@ -75,14 +75,14 @@ function countLinuxUsers(users) {
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
   // Add your code here!
-  var key = 0;
-  for (var v in scores) {
+  let key = 0;
+  for (let v in scores) {
     key += scores[v];
   }
 
-  var count = scores.length;
+  let count = scores.length;
 
-  var result = key / count;
+  let result = key / count;
   return parseInt(result.toFixed(2));
 }
 
