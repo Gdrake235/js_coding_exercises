@@ -6,7 +6,6 @@ const findNextNumber = (nums, n) => {
   for (var i = 0; i < n; i++) {
     return nums.push(i);
   }
-
 };
 
 const count1sand0s = (str) => {
@@ -39,21 +38,21 @@ const reverseNumber = (n) => {
   return result;
 };
 
-const sumArrays = arrs => {
+const sumArrays = (arrs) => {
   if (arrs === undefined) throw new Error("arrs is required");
   // Your code here!
-   var result = 0;
-   for (var n = 0; n < arrs.length; ++n) {
-     result += arrs[n];
-   }
-   return result;
-/*   var result = arrs.reduce(function (a, b) {
+  var result = 0;
+  for (var n = 0; n < arrs.length; ++n) {
+    result += arrs[n];
+  }
+  return result;
+  /*   var result = arrs.reduce(function (a, b) {
     return a + b;
   }, 0);
   return result */
 };
 
-const arrShift = arr => {
+const arrShift = (arr) => {
   if (arr === undefined) throw new Error("arr is required");
   // Your code here!
 };
@@ -62,16 +61,14 @@ const findNeedle = (haystack, searchTerm) => {
   if (haystack === undefined) throw new Error("haystack is required");
   if (searchTerm === undefined) throw new Error("searchTerm is required");
   // Your code here!
- 
 
   // ⛔️ Uncaught TypeError: str.includes is not a function
   /* const result = haystack.includes(searchTerm); 
     return result
   */
 
-  
   const result = haystack.toString().includes(searchTerm);
-  return result; 
+  return result;
 };
 
 const getWordFrequencies = (str) => {
@@ -103,5 +100,5 @@ module.exports = {
   sumArrays,
   arrShift,
   findNeedle,
-  getWordFrequencies
+  getWordFrequencies,
 };
