@@ -18,7 +18,7 @@ function getBusNumbers(people) {
   
   
  /*  for (let n = 0; n < people.length; n++){
-    var bus = on - off;
+    let bus = on - off;
     let amount = people[n];
     let on = amount[0];
     let off = amount[1];
@@ -30,13 +30,13 @@ function getBusNumbers(people) {
 
    return bus;
  */
-     /*  var on = 0;
- 3     var of = 0;
- 4     for(var i=0; i<people.length; i++){
+     /*  let on = 0;
+ 3     let of = 0;
+ 4     for(let i=0; i<people.length; i++){
  5       on += people[i][0]
  6       of += people[i][1]
  7     }   
- 8   var total = on-of;
+ 8   let total = on-of;
  9   return total; */
 
   return people.toString().length;
