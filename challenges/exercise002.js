@@ -7,17 +7,15 @@ function getFillings(sandwich) {
 function isFromManchester(person) {
   if (person === undefined) throw new Error("person is required");
   // Your code here!
-  if (person !== person )
-  return false;
-  else return true
+  if (person !== person) return false;
+  else return true;
 }
 
 function getBusNumbers(people) {
   if (people === undefined) throw new Error("people is required");
   // Your code here!
-  
-  
- /*  for (let n = 0; n < people.length; n++){
+
+  /*  for (let n = 0; n < people.length; n++){
     let bus = on - off;
     let amount = people[n];
     let on = amount[0];
@@ -30,7 +28,7 @@ function getBusNumbers(people) {
 
    return bus;
  */
-     /*  let on = 0;
+  /*  let on = 0;
  3     let of = 0;
  4     for(let i=0; i<people.length; i++){
  5       on += people[i][0]
@@ -45,21 +43,20 @@ function getBusNumbers(people) {
 function countSheep(arr) {
   if (arr === undefined) throw new Error("arr is required");
   // Your code here!
-console.log(arr);
+  console.log(arr);
 
- /*  let total = 0;
+  /*  let total = 0;
   for (let s = 0; i < arr.length; s++) {
     if (arr[s]) total += 1;
   }
   return total; */
-  
 }
 
 function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
   // Your code here!
-  console.log(person)
-  return person.address["M"]
+  console.log(person);
+  return person.address["M"];
 }
 
 module.exports = {
@@ -67,5 +64,5 @@ module.exports = {
   isFromManchester,
   countSheep,
   getBusNumbers,
-  hasMPostCode
+  hasMPostCode,
 };
